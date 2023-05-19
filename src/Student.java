@@ -30,4 +30,14 @@ public class Student implements Comparable<Student> {
     public String toString() {
         return "Name: " + name + ", ID: " + id + ", Grade: " + grade;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Student))
+            return false;
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Student student = (Student) obj;
+        return name.equals(student.name) && id == student.id && grade == student.grade;
+    }
 }
