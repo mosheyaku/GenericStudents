@@ -1,12 +1,12 @@
 public class Student implements Comparable<Student> {
     private String name;
     private int id;
-    private int score;
+    private int grade;
 
-    public Student(String name, int id, int score) {
+    public Student(String name, int id, int grade) {
         this.name = name;
         this.id = id;
-        this.score = score;
+        this.grade = grade;
     }
 
     public String getName() {
@@ -17,17 +17,17 @@ public class Student implements Comparable<Student> {
         return id;
     }
 
-    public int getScore() {
-        return score;
+    public int getGrade() {
+        return grade;
     }
 
     @Override
     public int compareTo(Student other) {
-        return Integer.compare(score, other.score);
+        return Integer.compare(grade, other.grade);
     }
 
     @Override
     public String toString() {
-        return "Name: " + name + ", ID: " + id + ", Score: " + score;
+        return "Name: " + name + ", ID: " + id + ", Grade: " + grade;
     }
 }
