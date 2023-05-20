@@ -38,6 +38,6 @@ public class Student implements Comparable<Student> {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
         Student student = (Student) obj;
-        return name.equals(student.name) && id == student.id && grade == student.grade;
+        return /*name.equals(student.name) && id == student.id &&*/ grade == student.grade;
     }
 }

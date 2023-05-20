@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class SortedGroup <T extends Comparable<T>> implements Iterable<T>{
+public class SortedGroup<T extends Comparable<T>> implements Iterable<T> {
 
     private ArrayList<T> collection;
 
-    public SortedGroup(){
-        collection= new ArrayList<>();
+    public SortedGroup() {
+        collection = new ArrayList<>();
     }
 
     public void add(T element) {
